@@ -1,0 +1,31 @@
+<Table headers={headers} rows={rows} />
+        <Question
+          title="Title of Book 2"
+          tags={tags2}
+          description="Description of Book 2"
+          detailsLink="/books/book2"
+        />
+        <Question
+          title="Title of Book 2"
+          tags={tags2}
+          description="Description of Book 2 Tries, or prefix trees, are data structures used for efficient string searching and retrieval. Tries, or prefix trees, are data structures used for efficient string searching and retrieval. Tries, or prefix trees, are data structures used for efficient string searching and retrieval."
+          detailsLink="/books/book2"
+        />
+
+
+          const headers = ['Name', 'Age', 'Country'];
+  const rows = [
+    ['John Doe', 25, 'USA'],
+    ['Jane Smith', 30, 'Canada'],
+    ['Mike Johnson', 28, 'UK'],
+    ['John Doe', 25, 'USA'],
+    ['Jane Smith', 30, 'Canada'],
+    ['Mike Johnson', 28, 'UK'],
+  ];
+
+  const tags2 = [
+    { name: 'Tag 1', link: '/tags/tag1' },
+    { name: 'Tag 2', link: '/tags/tag2' },
+    { name: 'Tag 3', link: '/tags/tag3' },
+    { name: 'Tag 4', link: '/tags/tag4' },
+  ];

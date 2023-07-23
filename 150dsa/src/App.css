@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+.neon__container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line */
+}
+
+@keyframes neon-border {
+    0% {
+        border-color: rgb(29, 153, 243);
+    }
+
+    50% {
+        border-color: #ca06a9;
+    }
+
+    100% {
+        border-color: rgb(164, 234, 13);
+    }
+}
+
+.neon__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid white;
+    animation: neon-border 1s infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    flex: 0 0 calc(33.33% - 20px);
+    /* Adjust the width of each card to occupy one-third of the container */
+}
+
+.neon__icon {
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+    margin-bottom: 1rem;
+}
+
+.neon__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.neon__description {
+    margin-bottom: 1.5rem;
+}
+
+.neon__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: #FF0080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.neon__button:hover {
+    background-color: #FF00CC;
+    color: #fff;
+}
+
+.neon__button-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 960px) {
+    .neon__card {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+.faq-containers {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #777e91;
+    border-radius: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

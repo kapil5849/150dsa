@@ -1,0 +1,30 @@
+.article-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: greenyellow;
+    font-family: 'Righteous', cursive;
+}
+
+@media (max-width: 600px) {
+    .article-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .article-heading {
+        font-size: 25px;
+    }
+}

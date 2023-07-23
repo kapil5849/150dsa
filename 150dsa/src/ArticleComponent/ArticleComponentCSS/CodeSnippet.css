@@ -1,0 +1,85 @@
+.code-snippet-container {
+    position: relative;
+    background-color: #37393B;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C4C7C5;
+    cursor: pointer;
+  }
+  
+
+.code-snippet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.code-snippet-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copy-button:hover {
+    background-color: #e0e0e0;
+}
+
+.code-snippet-body {
+    position: relative;
+}
+
+.macbook-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.macbook-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #1B1B1B;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.code-snippet-code {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    padding: 10px;
+    overflow: auto;
+    color: #C4C7C5;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .code-snippet-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .code-snippet-title {
+        font-size: 14px;
+    }
+}

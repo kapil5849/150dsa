@@ -1,0 +1,29 @@
+.hr {
+    border: none;
+    border-top: 3px solid white;
+    margin: 20px 0;
+    position: relative;
+    animation: hr-animation 1s linear infinite;
+}
+
+@keyframes hr-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hr.movable {
+    cursor: move;
+}
+
+.hr.movable:hover {
+    border-top-color: #000;
+}

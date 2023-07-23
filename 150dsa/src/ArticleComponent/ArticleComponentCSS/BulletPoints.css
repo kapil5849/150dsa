@@ -1,0 +1,19 @@
+.bullet-points {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.sub-bullet-points {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .bullet-points {
+        padding-left: 10px;
+    }
+
+    .sub-bullet-points {
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,45 @@
+/* CSS styles for Heading component */
+.heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.heading-one {
+    font-size: 28px;
+}
+
+.heading-two {
+    font-size: 24px;
+}
+
+.heading-three {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .heading-one {
+        font-size: 24px;
+    }
+
+    .heading-two {
+        font-size: 20px;
+    }
+
+    .heading-three {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading-one {
+        font-size: 20px;
+    }
+
+    .heading-two {
+        font-size: 18px;
+    }
+
+    .heading-three {
+        font-size: 16px;
+    }
+}
