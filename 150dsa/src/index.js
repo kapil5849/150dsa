@@ -33,7 +33,7 @@ import ResumeTools from './pages/Resume Building Tools/ResumeTools'
 import Signup from './pages/signup and login page/SignUp';
 import Login from './pages/signup and login page/Login';
 
-ReactDOM.render(
+ReactDOM.render( 
   <GoogleOAuthProvider clientId="1010399726357-rrgbu2ciutc3ouvnv3ua0tlbulrol4i3.apps.googleusercontent.com">
   <Router>
     <Routes>
