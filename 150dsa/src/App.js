@@ -62,7 +62,6 @@ const App = () => {
           toggleFAQ={toggleFAQ}
         />
       </div>
-
       <Footer />
     </section>
   );

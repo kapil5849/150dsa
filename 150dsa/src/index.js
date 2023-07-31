@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -28,8 +30,11 @@ import GreedyAlgo from './pages/Greedy Algorithm/GreedyAlgo'
 import Tries from './pages/Tries/Tries'
 import Projects from './pages/Projects/Projects'
 import ResumeTools from './pages/Resume Building Tools/ResumeTools'
+import Signup from './pages/signup and login page/SignUp';
+import Login from './pages/signup and login page/Login';
 
 ReactDOM.render(
+  <GoogleOAuthProvider clientId="1010399726357-rrgbu2ciutc3ouvnv3ua0tlbulrol4i3.apps.googleusercontent.com">
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
@@ -49,15 +54,20 @@ ReactDOM.render(
       <Route path="stl" element={<STLinCpp />} />
       <Route path="bit" element={<BitManipulation />} />
       <Route path="math" element={<MathLogicPuzzles />} />
-      <Route path="binary" element={<BinarySearch/>}/>
-      <Route path="twoPointers" element={<TwoPointers/>}/>
-      <Route path="slidingWindow" element={<SlidingWindow/>}/>
-      <Route path="greedyAlgo" element={<GreedyAlgo/>}/>
-      <Route path="tries" element={<Tries/>}/>
-      <Route path="projects" element={<Projects/>}/>
-      <Route path="resumeTools" element={<ResumeTools/>}/>
+      <Route path="binary" element={<BinarySearch />} />
+      <Route path="twoPointers" element={<TwoPointers />} />
+      <Route path="slidingWindow" element={<SlidingWindow />} />
+      <Route path="greedyAlgo" element={<GreedyAlgo />} />
+      <Route path="tries" element={<Tries />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="resumeTools" element={<ResumeTools />} />
+      <Route path="signup" element={<Signup />} />
+      <Route path="login" element={<Login />} />
+
     </Routes>
-  </Router>,
+  </Router>
+  </GoogleOAuthProvider>,
+
   document.getElementById('root')
 );
 
