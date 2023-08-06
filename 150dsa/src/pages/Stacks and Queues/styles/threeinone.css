@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.three-in-one-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.three-in-one-content {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+    margin: 15px;
+}
+
+@media (max-width: 600px) {
+    .three-in-one-content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .three-in-one-content {
+        font-size: 14px;
+    }
+}

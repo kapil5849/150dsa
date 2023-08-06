@@ -32,40 +32,59 @@ import Projects from './pages/Projects/Projects'
 import ResumeTools from './pages/Resume Building Tools/ResumeTools'
 import Signup from './pages/signup and login page/SignUp';
 import Login from './pages/signup and login page/Login';
+import AnimalShelter from './pages/Stacks and Queues/AnimalShelter';
+import ThreeInOne from './pages/Stacks and Queues/ThreeInOne';
+import StackMin from './pages/Stacks and Queues/StackMin';
+import StackOfPlates from './pages/Stacks and Queues/StackOfPlates';
+import QueueviaStacks from './pages/Stacks and Queues/QueueviaStacks';
+import SortStack from './pages/Stacks and Queues/SortStack';
 
-ReactDOM.render( 
+
+
+
+ReactDOM.render(
   <GoogleOAuthProvider clientId="1010399726357-rrgbu2ciutc3ouvnv3ua0tlbulrol4i3.apps.googleusercontent.com">
-  <Router>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/bop" element={<Bop />} />
-      <Route path="patterns" element={<Pattern />} />
-      <Route path="functions" element={<Functions />} />
-      <Route path="arrays" element={<ArrayString />} />
-      <Route path="recursions" element={<RecursionBacktracking />} />
-      <Route path="big" element={<BigONotation />} />
-      <Route path="stacks" element={<StacksQueues />} />
-      <Route path="linkedLists" element={<LinkedLists />} />
-      <Route path="treesGraphs" element={<TreesGraphs />} />
-      <Route path="hashmapHeap" element={<HashmapHeap />} />
-      <Route path="dynamicProgramming" element={<DynamicProgramming />} />
-      <Route path="sortingSearching" element={<SortingSearching />} />
-      <Route path="objectOrientedDesign" element={<ObjectOrientedDesign />} />
-      <Route path="stl" element={<STLinCpp />} />
-      <Route path="bit" element={<BitManipulation />} />
-      <Route path="math" element={<MathLogicPuzzles />} />
-      <Route path="binary" element={<BinarySearch />} />
-      <Route path="twoPointers" element={<TwoPointers />} />
-      <Route path="slidingWindow" element={<SlidingWindow />} />
-      <Route path="greedyAlgo" element={<GreedyAlgo />} />
-      <Route path="tries" element={<Tries />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="resumeTools" element={<ResumeTools />} />
-      <Route path="signup" element={<Signup />} />
-      <Route path="login" element={<Login />} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/bop" element={<Bop />} />
+        <Route path="patterns" element={<Pattern />} />
+        <Route path="functions" element={<Functions />} />
+        <Route path="arrays" element={<ArrayString />} />
+        <Route path="recursions" element={<RecursionBacktracking />} />
+        <Route path="big" element={<BigONotation />} />
+        <Route path="stacks" element={<StacksQueues />} />
+        <Route path="linkedLists" element={<LinkedLists />} />
+        <Route path="treesGraphs" element={<TreesGraphs />} />
+        <Route path="hashmapHeap" element={<HashmapHeap />} />
+        <Route path="dynamicProgramming" element={<DynamicProgramming />} />
+        <Route path="sortingSearching" element={<SortingSearching />} />
+        <Route path="objectOrientedDesign" element={<ObjectOrientedDesign />} />
+        <Route path="stl" element={<STLinCpp />} />
+        <Route path="bit" element={<BitManipulation />} />
+        <Route path="math" element={<MathLogicPuzzles />} />
+        <Route path="binary" element={<BinarySearch />} />
+        <Route path="twoPointers" element={<TwoPointers />} />
+        <Route path="slidingWindow" element={<SlidingWindow />} />
+        <Route path="greedyAlgo" element={<GreedyAlgo />} />
+        <Route path="tries" element={<Tries />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="resumeTools" element={<ResumeTools />} />
+        <Route path="signup" element={<Signup />} />
+        <Route path="login" element={<Login />} />
+        <Route path="/animal-shelter" element={<AnimalShelter />} />
+        <Route path="/three-in-one" element={<ThreeInOne />} />
+        <Route path="/stack-min" element={<StackMin />} />
+        <Route path="/stack-of-plates" element={<StackOfPlates />} />
+        <Route path="/queue-via-stacks" element={<QueueviaStacks />} />
+        <Route path="/sort-stack" element={<SortStack />} />
 
-    </Routes>
-  </Router>
+
+
+
+
+      </Routes>
+    </Router>
   </GoogleOAuthProvider>,
 
   document.getElementById('root')
