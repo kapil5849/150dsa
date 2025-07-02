@@ -95,6 +95,3 @@ For major updates, please open an issue to discuss what you would like to change
 
 **Kapil Vaishnav**
 🔗 GitHub: [@kapil5849](https://github.com/kapil5849)
-
----
-```
